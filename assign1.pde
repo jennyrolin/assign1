@@ -20,6 +20,7 @@ void setup () {
   a=floor(random(20,600));
   b=floor(random(20,440));
   w=floor(random(100,200));
+  k=floor(random(420));
   
   // your code
 }
@@ -45,7 +46,7 @@ void draw() {
   
   image(img,570,230);
   image(img1,10,10);
-  image(img3,x,50);
+  image(img3,x,k);
   
   
   
