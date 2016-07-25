@@ -1,5 +1,5 @@
 /* please implement your assign1 code in this file. */
-int x,y,a,b,w,z;
+int x,y,a,b,w,z,k;
 PImage img;
 PImage img1;
 PImage img2;
@@ -31,11 +31,12 @@ void draw() {
   x+=5;
   x%=640;
   
-  z+=3;
-  z%=640;
+  z+=2;
+  z%=1280;
   
-  image(img5,z-640,0);
-  image(img4,z,0);
+  
+  image(img4,z%1280-640,0);
+  image(img5,(z+640)%1280-640,0);
   image(img2,a,b);
   
   rect(20,13,w,20);
